@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital@1&family=Cairo:wght@700&family=Montserrat&family=Oleo+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="code-css.css">
+    </head>
+    <body>
+        <div class="nav">
+            <img src="anokha.png" style="width: 80px;height: 80px;margin-left:3%;">
+            <h2 class="logo" style="margin-left:2%;">Anokha</h2>
+            <ul class="nav-place" style="margin-right: 5%;">
+            <li> <a href="Home.html" class="navbutton"><span id="sp1" onmouseover="add_a(this,'fadeIn') " onmouseout="remove_a(this,'fadeIn')">Home</span></a></li>
+            <li> <a href="About.html" class="navbutton"><span id="sp2" onmouseover="add_a(this,'fadeIn')" onmouseout="remove_a(this,'fadeIn')">About</span></a></li>
+            <li> <a href="Events.html" class="navbutton"><span id="sp2" onmouseover="add_a(this,'fadeIn')" onmouseout="remove_a(this,'fadeIn')">Events</span></a></li>
+            <li> <a href="Contacts.html" class="navbutton"><span id="sp2" onmouseover="add_a(this,'fadeIn')" onmouseout="remove_a(this,'fadeIn')">Contacts</span></a></li>
+            </ul>
+            
+        </div>
+        <div style="background-color: #041D2E;height:730px;position:relative;z-index:0">
+            
+            <div style="position: absolute;left:30%;top:20%">
+                <h1 class="head animated fadeIn slow">TECH FAIR</h1>
+                <div class="animated slideInRight"style="border-bottom:15px#E67637 solid;width:250px;margin-left : 47%;margin-top: -28.2px;"> </div>
+                <div class="animated slideInRight"style="border-bottom:15px #F8EEBF solid;width:120px;margin-left : 85%;margin-top: -15px;"> </div>
+            </div>
+        <a href="#KM" targee class="button" style="position:absolute;top:80%;left:15%;" onmouseover="add_a(this,'pulse')"onmouseout="remove_a(this,'pulse')">Know More</a>
+        <a href="#R"class="button" style="position:absolute;top:80%;left:50%;" onmouseover="add_a(this,'pulse')"onmouseout="remove_a(this,'pulse')">Register</a>
+        <a href="code.html"><img src="f-1.svg" style="width: 27.5px;height: 27.5px;position:absolute;top:93%;right:10%;" onmouseover="this.src='f-2.svg'" onmouseout="this.src='f-1.svg'"></a>
+        <a href="code.html"><img src="i-1.svg" style="width: 27.5px;height: 27.5px;position:absolute;top:93%;right:7%;" onmouseover="this.src='i-2.svg'" onmouseout="this.src='i-1.svg'"></a>
+        <a href="code.html"><img src="t-1.svg" style="width: 27.5px;height: 27.5px;position:absolute;top:93%;right:4%;" onmouseover="this.src='t-2.svg'" onmouseout="this.src='t-1.svg'"></a>
+    </div>
+        <div style="height: 730px;background-color:#F8EEBF;top:100%;" id="KM">
+            <div style="position: absolute;left:45%;top:105%;">
+                <h1 class="head2 " style="">About</h1>
+                <div style="border-bottom:15px #19807c solid;width:110px;margin-left : 0%;margin-top: -40.2px;"></div>
+                <div style="border-bottom:15px #2ca588 solid;width:110px;margin-left : 50%;margin-top: -15.0px;"></div>
+            </div>
+            <div class="div-box-1 wow fadeIn">
+                <p class="para">The Largest platform to showcase your projects is now here.Now split into two categories Software and Hardware!.<br>Exciting prizes to be given.</p>
+            </div>
+                <div class="div-box-2 wow fadeIn ">
+                    <h3 class="prize">Prizes Distributed:</h3>
+                    <br>
+                    <ul class="list">
+                        <li class="l">1st Prize : ₹25000 worth Robotics Kit</li>
+                        <li class="l">2nd Prize : ₹15000 worth Smart Watch</li>
+                        <li class="l">3rd Prize : ₹10000 worth Coursera Voucher</li>
+                    </ul>
+
+                </div>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+           new WOW().init()
+        </script>
+         <script src="code-js.js"></script>
+        <img src="vector.jpg" style="width:100%;height:100%;position: absolute;top:202%;">
+        <div style="width:100%;height: 721px;background:rgb(1, 17, 27);opacity: 0.7;position: absolute;top:202%;left:0%;"></div>
+        <div style="width:500px;height: 650px;background:rgb(1, 17, 27);opacity: 0.9;position: absolute;top:207.5%;left:35%;">
+           
+            <h3 class="head3" id="R">REGISTER</h3>
+            <form style="margin-top: 10%;" id="form">
+             
+                <input class="inp" type="text" id="NAME" value="NAME" onfocus="change(this,'NAME');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off" >
+                <br>
+                <br>
+                <br>
+                <input class="inp" type="text" id="COLLEGE" value="COLLEGE" onfocus="change(this,'COLLEGE');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off">
+                <br>
+                <br>
+                <br>
+                <input class="inp" type="text" id="PASSPORT ID" value="PASSPORT ID" onfocus="change(this,'PASSPORT ID');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off">
+                <br>
+                <br>
+                <br>
+                <input class="inp" type="text" id="Team Name" value="Team Name" onfocus="change(this,'Team Name');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off">
+                <br>
+                <br>
+                <br>
+                <button class="b" id="b1" onclick="sub()">Submit</button>
+
+                
+                
+
+            </form>
+        </div>
+    </body>
+</html>

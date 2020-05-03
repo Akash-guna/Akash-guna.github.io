@@ -1,0 +1,39 @@
+.img{
+    width:275px;
+    height: 150px;
+    position: absolute;
+}
+
+.mask{
+    display: inline;
+    width:275px;
+    height: 150px;
+    background-color: #041d2e;
+    opacity: 0.7;
+    position: absolute;
+    transition: background-color 0.4s;
+    
+}
+.mask:hover{
+    display: inline;
+    width:275px;
+    height: 150px;
+    background-color: #E67637;
+    opacity: 0.9;
+    position: absolute;
+}
+p{
+    display: none;
+    
+}
+.mask:hover p{
+    display: inline;
+    font-size:20px;
+    font-family:'Varela Round', sans-serif;
+    color:#F8EEBF;
+    position: absolute;
+    top:25%;
+    left:30%;
+
+
+}
