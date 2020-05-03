@@ -1,0 +1,174 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#first{
+    
+    width: 100%;
+    height: 500px;
+    min-height: 35rem;
+    padding-top: 30px;
+    background: linear-gradient(to bottom, rgba(4, 20, 49, 0.89) 10%, rgba(19, 23, 63, 0.726) 45%, #161616 100%), url("wallpaperflare.com_wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    
+}
+#second{
+    
+    width: 100%;
+    height: 610px;
+    background: linear-gradient(to top, rgba(31, 45, 82, 0.884) 10%, rgba(29, 22, 68, 0.767) 30%, #161616 100%), url("wallpaperflare.com_wallpaper (9).jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-top: 0;
+}
+#third{
+    width: 100%;
+    height: 600px;
+}
+#about{
+    padding-top: 30px;
+    background-color: transparent;
+    background: transparent;
+}
+.logo{
+    flex:1 1 auto;
+    font-family: 'Oleo Script', cursive;
+    font-size: 40px;
+    color:#19807c;
+    margin-left:7%;
+}
+.nav{
+    overflow: Hidden;
+    position: fixed;
+    top:0%;
+    display:flex;
+    flex-direction: row;
+    background-color:transparent;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    z-index: 1000;
+}
+.nav-place{
+    display: flex;
+    justify-content: right;    
+    list-style: none;
+}
+.nav-place button{
+    background-color:transparent;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    padding-top: 17px;
+    font-size: 20px;
+}
+.nav-place a:hover, .nav-place button:hover {
+    background-color: lightblue;
+    color: black;
+}
+.nav-place a{
+    color: white;
+    float: left;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 23px;
+}
+
+
+.tabcontent{
+    color: white;
+    height: 450px;
+    opacity: 0.8;
+    display: none;
+    padding: 20px 20px;
+}
+
+.reg{
+    margin-left: 15%;
+    margin-top: 200px;
+}
+.reg a{
+    float: left;
+    padding: 17px 17px;
+    color: honeydew;
+    font-size: 17px;
+    outline: solid;
+    text-decoration: none;
+}
+.reg a:hover{
+    background-color: gray;
+}
+li a{
+    text-decoration: none;
+    font-size: 28px;
+    color: honeydew;
+}
+#anokha{
+    font-size: 65px;
+    letter-spacing: 4px;
+    opacity: 0.8;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: white;
+}
+
+.para{
+    font-family: 'Comfortaa', cursive;
+    color: wheat;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 20px;  
+    opacity: 0.7;
+    text-align: justify;
+}
+.para2{
+    font-family: 'Comfortaa', cursive;
+    color: wheat;
+    text-align: justify;
+    padding-top: 94px;
+    padding-right: 30px;
+    padding-left: 670px;
+    font-size: 15px;
+}
+#para3{
+    font-family: 'Comfortaa', cursive;
+    color: wheat;
+    text-align: left;
+    padding-top: 45px;
+    padding-right: 60px;
+    padding-left: 602px;
+    font-size: 15px;
+}
+#para4{
+    font-family: 'Comfortaa', cursive;
+    color: wheat;
+    text-align: right;
+    padding-top: 325px;
+    padding-right: 602px;
+    padding-left: 80px;
+    font-size: 15px;
+}
+#intro{
+    height: 400px;
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgba(32, 47, 87, 0.932);
+}
+.events{
+    height: 660px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 120px;
+    background-color: rgb(14, 33, 46);
+}
