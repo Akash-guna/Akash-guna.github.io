@@ -1,5 +1,6 @@
+
 function change(val,ini)
-{ 
+{   console.log(val.value)
     if(val.value==ini) {
         val.value="";
     }
@@ -8,6 +9,7 @@ function change(val,ini)
     l = x.length;
     for (i = 0; i < l; i++) {
         ele=document.getElementById(x[i].id)
+        console.log(ele.value)
         if(ele.value=='') {ele.value=x[i].id}
         ele.classList.remove("inp_click")
         remove_a(ele,"pulse")
@@ -54,12 +56,17 @@ function check(t)
 }
 function sub()
 {
-    name=document.getElementById("NAME")
+    na=document.getElementById("NAME")
     college=document.getElementById("COLLEGE")
     pass=document.getElementById("PASSPORT ID")
     team=document.getElementById("Team Name")
-    if(((name.value!="NAME")&&(name.value!=""))&&((college.value!="COLLEGE")&&(college.value!=""))&&((pass.value!="PASSPORT ID")&&(pass.value!=""))&&((team.value!="Team Name")&&(team.value!=""))&&(flag==0))
-    {
+    console.log(na.value)
+    console.log(college.value)
+    console.log(pass.value)
+    console.log(team.value)
+    if(((na.value!="NAME")&&(na.value!=""))&&((college.value!="COLLEGE")&&(college.value!=""))&&((pass.value!="PASSPORT ID")&&(pass.value!=""))&&((team.value!="Team Name")&&(team.value!=""))&&(flag==0))
+    {   e=document.getElementsByClassName("head")[0].innerHTML;
+        email(e,na.value,college.value,pass.value,team.value);
         window.alert("Registration Successful")
     }
     else
@@ -83,4 +90,18 @@ function playm(i)
 {
     var audio = new Audio(i);
     audio.play();
+}
+function email(e,n,c,p,t)
+{
+    var template_params = {
+        "event_name": e,
+        "name": n,
+        "clg": c,
+        "pass": p,
+        "team": t
+     }
+     console.log(JSON.stringify(template_params))
+     var service_id = "default_service";
+     var template_id = "event_reg";
+     emailjs.send(service_id, template_id, template_params);
 }

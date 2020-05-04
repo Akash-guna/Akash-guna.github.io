@@ -6,6 +6,14 @@
         <link rel="stylesheet" href="code-css-a.css">
     </head>
     <body>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("user_j0KPtcMQ8vKSl4mMaM014");
+        })();
+        </script>
         <div class="nav">
             <img src="anokha.png" style="width: 80px;height: 80px;margin-left:3%;">
             <h2 class="logo" style="margin-left:2%;">Anokha</h2>
@@ -62,8 +70,7 @@
            
             <h3 class="head3" id="R">REGISTER</h3>
             <form style="margin-top: 10%;" id="form">
-             
-                <input class="inp" type="text" id="NAME" value="NAME" onfocus="change(this,'NAME');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off" >
+                <input class="inp" type="text" id="NAME" value="NAME" onfocus="change(this,'NAME');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off">
                 <br>
                 <br>
                 <br>
@@ -79,7 +86,7 @@
                 <br>
                 <br>
                 <br>
-                <button class="b" id="b1" onclick="sub()">Submit</button>
+                <input type="button" class="b" id="b1" onclick="sub()" value="Submit">
 
                 
                 

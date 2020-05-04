@@ -7,14 +7,21 @@
         <link rel="stylesheet" href="code-css.css">
     </head>
     <body>
-        
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("user_j0KPtcMQ8vKSl4mMaM014");
+        })();
+        </script>
         <div class="nav">
             <img src="anokha.png" style="width: 80px;height: 80px;margin-left:3%;">
             <h2 class="logo" style="margin-left:2%;">Anokha</h2>
             <ul class="nav-place" style="margin-right: 5%;">
             <li> <a href="Home.html" class="navbutton"><span id="sp1" onmouseover="add_a(this,'fadeIn') " onmouseout="remove_a(this,'fadeIn')">Home</span></a></li>
             <li> <a href="About.html" class="navbutton"><span id="sp2" onmouseover="add_a(this,'fadeIn')" onmouseout="remove_a(this,'fadeIn')">About</span></a></li>
-            <li> <a href="https://akash-guna.github.io/" class="navbutton"><span id="sp2" onmouseover="add_a(this,'fadeIn')" onmouseout="remove_a(this,'fadeIn')">Events</span></a></li>
+            <li> <a href="Events.html" class="navbutton"><span id="sp2" onmouseover="add_a(this,'fadeIn')" onmouseout="remove_a(this,'fadeIn')">Events</span></a></li>
             <li> <a href="Contacts.html" class="navbutton"><span id="sp2" onmouseover="add_a(this,'fadeIn')" onmouseout="remove_a(this,'fadeIn')">Contacts</span></a></li>
             </ul>
             
@@ -22,7 +29,7 @@
         <div style="background-color: #041D2E;height:730px;position:relative;z-index:0">
             
             <div style="position: absolute;left:30%;top:20%">
-                <h1 class="head animated fadeIn slow">CODE WARS</h1>
+                <h1 class="head animated fadeIn slow" id="page_name">CODE WARS</h1>
                 <div class="animated slideInRight"style="border-bottom:15px#E67637 solid;width:250px;margin-left : 47%;margin-top: -28.2px;"> </div>
                 <div class="animated slideInRight"style="border-bottom:15px #F8EEBF solid;width:120px;margin-left : 85%;margin-top: -15px;"> </div>
             </div>
@@ -65,8 +72,7 @@
            
             <h3 class="head3" id="R">REGISTER</h3>
             <form style="margin-top: 10%;" id="form">
-             
-                <input class="inp" type="text" id="NAME" value="NAME" onfocus="change(this,'NAME');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off" >
+                <input class="inp" type="text" id="NAME" value="NAME" onfocus="change(this,'NAME');check(this);add_a(this,'pulse');playm('pop.mp3')"autocomplete="off">
                 <br>
                 <br>
                 <br>
@@ -82,7 +88,7 @@
                 <br>
                 <br>
                 <br>
-                <button class="b" id="b1" onclick="sub()">Submit</button>
+                <input type="button" class="b" id="b1" onclick="sub()" value="Submit">
 
                 
                 
