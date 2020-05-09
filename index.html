@@ -1,6 +1,7 @@
 <html>
-<body>
-    <script src="code_js.js"></script>
+<body onload="lar()">
+    <script src="code-js.js"></script>
+    <script src="event-js.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script>
            new WOW().init()
@@ -25,9 +26,9 @@
             <img src="c.jpg" class="img wow slideInLeft fast" style="left:27.5%;top:30%;">
             <img src="tech.jpg" class="img wow slideInRight fast"style="right:27.5%;top:50%;animation-name: slideInRight;animation-delay: 250ms;">
             <img src="assem.jpg" class="img wow slideInLeft fast"style="left:27.5%;top:70%;animation-name: slideInLeft;animation-delay: 500ms;">
-            <a href="code.html"><div class="mask wow slideInLeft fast" style="left:27.5%;top:30%;"><p>Code Wars</p></div></a>
-            <a href="Techfair.html"><div class="mask wow slideInRight fast" style="right:27.5%;top:50%;animation-name:slideInRight;animation-delay: 250ms;"><p style="left:35%;">Tech Fair</p></div></a>
-            <a href="Assembly.html"><div class="mask wow slideInLeft fast" style="left:27.5%;top:70%;animation-name: slideInLeft;animation-delay: 500ms;"><p style="left:18.5%;">Machine Assembly</p></div>
+            <a href="code.html"><div class="mask wow slideInLeft fast" style="left:27.5%;top:30%;"><p id="c-p">Code Wars</p></div></a>
+            <a href="Techfair.html"><div class="mask wow slideInRight fast" style="right:27.5%;top:50%;animation-name:slideInRight;animation-delay: 250ms;"><p id="t-p"style="left:35%;">Tech Fair</p></div></a>
+            <a href="Assembly.html"><div class="mask wow slideInLeft fast" style="left:27.5%;top:70%;animation-name: slideInLeft;animation-delay: 500ms;"><p id="m-p"style="left:18.5%;">Machine Assembly</p></div>
             
             <img src="mun.jpg" class="img wow slideInRight fast"style="right:27.5%;top:110%;animation-name: slideInRight;animation-delay: 250ms;">
             <img src="anwara.jpg" class="img wow slideInLeft fast"style="left:27.5%;top:130%;animation-name: slideInLeft;animation-delay: 500ms;">

@@ -54,7 +54,7 @@ function check(t)
         }
     }
 }
-function sub()
+function sub(kn)
 {
     na=document.getElementById("NAME")
     college=document.getElementById("COLLEGE")
@@ -68,6 +68,7 @@ function sub()
     {   e=document.getElementsByClassName("head")[0].innerHTML;
         email(e,na.value,college.value,pass.value,team.value);
         window.alert("Registration Successful")
+        cup('Anokhaw',kn,"1")
     }
     else
     {
@@ -104,4 +105,27 @@ function email(e,n,c,p,t)
      var service_id = "default_service";
      var template_id = "event_reg";
      emailjs.send(service_id, template_id, template_params);
+}
+function cget(nsp,k,i,com){
+    console.log("cget activated");
+    var xhr = new XMLHttpRequest();
+    u="https://api.countapi.xyz/"+com+"/"+nsp+"/"+k;
+    xhr.open("GET", u);
+    xhr.responseType = "json";
+    xhr.onload = function() {
+        document.getElementById(i).innerText = this.response.value;
+        console.log("Done-cget"+i);
+    }
+    xhr.send();
+}
+function cup(nsp,k,amt){
+    console.log("cup activated");
+    var xhr = new XMLHttpRequest();
+    u="https://api.countapi.xyz/"+"update"+"/"+nsp+"/"+k+"?amount="+amt;
+    xhr.open("GET", u);
+    xhr.responseType = "json";
+    xhr.onload = function() {
+        console.log("Done-Update"+i);
+    }
+    xhr.send();
 }

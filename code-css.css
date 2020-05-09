@@ -124,7 +124,7 @@ body{
     height:200px;
     position:absolute;
     left:25%;
-    top:140%;
+    top:135%;
     background-color:#19807c ;
 }
 .div-box-2{
@@ -132,7 +132,7 @@ body{
     height:200px;
     position:absolute;
     left:45%;
-    top:160%;
+    top:155%;
     background-color:#2ca588 ;
     z-index:5;
     animation-delay: 500ms;
